@@ -9,4 +9,15 @@ int main() {
     KlasaAbstrakcyjna* wsk;
     wsk = &kolo;
     wsk->pole();
+    oblicz(wsk);
+    wsk = &kwa;
+    wsk->pole();
+    oblicz(wsk);
+    wsk = &wal;
+    wsk->pole();
+    oblicz(wsk);
+    wsk = &szes;
+    wsk->pole();
+    oblicz(wsk);
+    cout << "................................" << endl;
 }

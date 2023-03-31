@@ -16,7 +16,7 @@ Kolo::~Kolo() {
 
 Walec::Walec(double r, double h): r(r), h(h) {}
 void Walec::pole() {
-	cout << "Pole walca wynosi: " << 2*atan(1) * 4 * r * r + 2* atan(1) * 4*h << endl;
+	cout << "Pole walca wynosi: " << 2*atan(1) * 4 * r * r + 2* atan(1) * 4*r*h << endl;
 }
 Walec::~Walec() {
 	cout << "Destruktor Walec" << endl;
@@ -38,3 +38,6 @@ Szescian::~Szescian() {
 	cout << "Destruktor Szescian" << endl;
 }
 
+void oblicz(KlasaAbstrakcyjna* wsk) {
+		wsk->pole();
+}

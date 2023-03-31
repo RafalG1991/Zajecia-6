@@ -5,7 +5,7 @@ using namespace std;
 
 class KlasaAbstrakcyjna {
 public:
-	virtual void pole();
+	virtual void pole()=0;
 	virtual ~KlasaAbstrakcyjna();
 };
 
@@ -43,3 +43,5 @@ public:
 	void pole();
 	~Szescian();
 };
+
+void oblicz(KlasaAbstrakcyjna* wsk);
